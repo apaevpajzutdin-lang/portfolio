@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Developer | Портфолио</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0d0d12;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        /* Шапка */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle at center, #1a1a24 0%, #0d0d12 100%);
+        }
+        header img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        header h1 span {
+            color: #00ff88;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #a0a0b0;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #00ff88;
+            color: #0d0d12;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+        }
+
+        /* Секция навыков */
+        .skills {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .skills h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #15151e;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #2a2a35;
+        }
+        .card h3 {
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #a0a0b0;
+            font-size: 0.95rem;
+        }
+
+        /* Подвал */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #50505a;
+            border-top: 1px solid #1a1a24;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <!-- Твоя картинка (робот) осталась -->
+        <img src="robot.jpg" alt="Мое фото">
+        <h1>Привет, я <span>Python Разработчик</span></h1>
+        <p>Изучаю программирование, создаю проекты на Python и автоматизирую задачи. Открыт к интересным предложениям и стажировкам.</p>
+        <a href="https://t.me/твой_юзернейм" class="btn">Написать мне</a>
+    </header>
+
+    <!-- Блок с навыками -->
+    <section class="skills">
+        <h2>Мои навыки</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🐍 Python</h3>
+                <p>Уверенно пишу на Python. Работаю с библиотеками, базами данных SQLite и изучаю создание телеграм-ботов.</p>
+            </div>
+            <div class="card">
+                <h3>🌐 HTML & CSS</h3>
+                <p>Могу сверстать простой, но красивый сайт-визитку. Понимаю основы адаптивной верстки.</p>
+            </div>
+            <div class="card">
+                <h3>⚙️ Автоматизация</h3>
+                <p>Настрою автоматическую работу скриптов, чтобы рутинные задачи выполнялись без твоего участия.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Блок с ценами -->
+    <section class="skills" style="background-color: #0a0a0f;">
+        <h2>Услуги и цены</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Сайт-визитка</h3>
+                <p>Одностраничный красивый сайт с вашей информацией, кнопками связи и адаптацией под телефоны.</p>
+                <p style="color: #00ff88; font-size: 1.5rem; font-weight: bold; margin-top: 15px;">от 2 000 ₽</p>
+            </div>
+            <div class="card">
+                <h3>Лендинг (Продающая страница)</h3>
+                <p>Одностраничный сайт с акцентом на продажу товара или услуги. Блоки с преимуществами и призывом к действию.</p>
+                <p style="color: #00ff88; font-size: 1.5rem; font-weight: bold; margin-top: 15px;">от 5 000 ₽</p>
+            </div>
+            <div class="card">
+                <h3>Доработка сайта</h3>
+                <p>Поменять текст, цвета, добавить кнопку или исправить ошибку на вашем существующем сайте.</p>
+                <p style="color: #00ff88; font-size: 1.5rem; font-weight: bold; margin-top: 15px;">от 500 ₽</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 Python Developer. Мое портфолио.</p>
+    </footer>
+
+</body>
+</html>
